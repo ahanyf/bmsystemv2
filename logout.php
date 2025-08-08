@@ -7,7 +7,7 @@ session_destroy();
 
 
 
-header("Location: ../bmsystemv2", true, 302);
+header("Location: ../v2", true, 302);
 
 
 

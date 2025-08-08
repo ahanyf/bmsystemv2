@@ -51,7 +51,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 ////	header("location:/AdminKit-BM");
 	
 	///echo "<script>window.location.href='/AdminKit-BM';</script>";
-	header("Location: ../../bmsystemv2/", true, 302);
+	header("Location: ../../v2/", true, 302);
     exit;
 	
 	
@@ -61,7 +61,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $cookieDisplay = $_COOKIE[$cookieName];
 	
 ///	header("location:/AdminKit-BM");
-header("Location: ../bmsystemv2", true, 302);
+header("Location: ../v2", true, 302);
 
 
 	

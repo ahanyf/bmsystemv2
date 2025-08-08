@@ -80,7 +80,7 @@
 											<label class="form-label">Password</label>
 											<input class="form-control form-control-lg" type="password" name="bm_pass" placeholder="Enter your password" required="" />
 											<small>
-												<a href="pages-reset-password.html">Forgot password?</a>
+												<a href="">Forgot password?</a>
 											</small>
 										</div>
 										<div>
