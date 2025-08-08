@@ -66,7 +66,7 @@
 										    echo "*" . $_COOKIE["password_incorrect"];
 										}
 									
-									echo $_SESSION['bm_session_id'];
+								
 																			
 									?>
 									

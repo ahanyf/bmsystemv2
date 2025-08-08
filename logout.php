@@ -7,7 +7,7 @@ session_destroy();
 
 
 
-header("location:/AdminKit-BM");
+header("Location: ../bmsystemv2", true, 302);
 
 
 
