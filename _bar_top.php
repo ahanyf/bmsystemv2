@@ -13,6 +13,8 @@
 				</form>
 
 				<ul class="navbar-nav d-none d-lg-flex">
+					<!---
+					
 					<li class="nav-item px-2 dropdown">
 						<a class="nav-link dropdown-toggle" href="#" id="megaDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true"
 							aria-expanded="false">
@@ -54,19 +56,18 @@
 							</div>
 						</div>
 					</li>
-
+--->
 					<li class="nav-item dropdown">
 						<a class="nav-link dropdown-toggle" href="#" id="resourcesDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true"
 							aria-expanded="false">
-							Resources
+							Quick Access
 						</a>
 						<div class="dropdown-menu" aria-labelledby="resourcesDropdown">
-							<a class="dropdown-item" href="https://adminkit.io/" target="_blank"><i class="align-middle me-1" data-feather="home"></i>
-								Homepage</a>
+							<a class="dropdown-item" href="?app=delivary&page=new" target="_blank"><i class="align-middle me-1" data-feather="home"></i>
+								New Delivery</a>
 							<a class="dropdown-item" href="https://adminkit.io/docs/" target="_blank"><i class="align-middle me-1" data-feather="book-open"></i>
-								Documentation</a>
-							<a class="dropdown-item" href="https://adminkit.io/docs/getting-started/changelog/" target="_blank"><i class="align-middle me-1"
-									data-feather="edit"></i> Changelog</a>
+								Todays Delivery</a>
+							
 						</div>
 					</li>
 				</ul>
