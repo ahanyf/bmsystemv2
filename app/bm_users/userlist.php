@@ -4,12 +4,32 @@
 						<div class="col-12">
 							<div class="card">
 								<div class="card-header">
-									<h5 class="card-title mb-0">Empty card</h5>
+						<!--			<h5 class="card-title mb-0">Empty card</h5>  -->
 									
 									
-									<?php
-									print_r($userid_);
-									?>
+									
+									
+									
+									<table class="table table-striped table-hover">
+<thead> <tr> <th>Name</th>  <th>Phone Number</th> <th>Date of Birth</th>
+        </tr>
+      </thead>
+<tbody>'
+<?php
+foreach ($userid_ as $id) {
+    echo '<tr>';
+    echo '<td>' . htmlspecialchars($fullname[$id]) . '</td>';
+    echo '<td>' . htmlspecialchars($mobile[$id]) . '</td>';
+    echo '<td>' . htmlspecialchars($fullname[$id]) . '</td>'; // Use 'N/A' if DOB is missing
+    echo '</tr>';
+}
+
+?>
+</tbody>
+</table>
+									
+									
+									
 									
 									
 									
