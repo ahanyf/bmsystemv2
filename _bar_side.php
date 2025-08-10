@@ -1,6 +1,6 @@
 <nav id="sidebar" class="sidebar js-sidebar">
 			<div class="sidebar-content js-simplebar">
-				<a class="sidebar-brand" href="index.html">
+				<a class="sidebar-brand" href="../v2/">
 					<span class="sidebar-brand-text align-middle">
 						BM System
 						<sup><small class="badge bg-primary text-uppercase">V2</small></sup>
@@ -53,7 +53,7 @@
 					
 					
 					<li class="sidebar-item">
-						<a class="sidebar-link" href="pages-invoice.html">
+						<a class="sidebar-link" href="../v2/">
 							<i class="align-middle" data-feather="credit-card"></i> <span class="align-middle">My Home</span>
 						</a>
 					</li>
@@ -70,10 +70,10 @@
 					
 					
 					<li class="sidebar-item">
-						<a data-bs-target="#datatables" data-bs-toggle="collapse" class="sidebar-link collapsed">
+						<a data-bs-target="#delivary" data-bs-toggle="collapse" class="sidebar-link collapsed">
 							<i class="align-middle" data-feather="list"></i> <span class="align-middle">Delivary</span>
 						</a>
-						<ul id="datatables" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
+						<ul id="delivary" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
 							<li class="sidebar-item"><a class="sidebar-link" href="">New Invoice <span
 										class="sidebar-badge badge bg-primary">Pro</span></a></li>
 						
@@ -81,14 +81,28 @@
 					</li>
 				
 					
+					<li class="sidebar-item">
+						<a data-bs-target="#reordering" data-bs-toggle="collapse" class="sidebar-link collapsed">
+							<i class="align-middle" data-feather="list"></i> <span class="align-middle">Reordering</span>
+						</a>
+						<ul id="reordering" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
+							<li class="sidebar-item"><a class="sidebar-link" href="">New Invoice <span
+										class="sidebar-badge badge bg-primary">Pro</span></a></li>
+						
+						</ul>
+					</li>
+
+
+
+					
 	
 					
 				
 					<li class="sidebar-item">
-						<a data-bs-target="#datatables1" data-bs-toggle="collapse" class="sidebar-link collapsed">
+						<a data-bs-target="#purchasing" data-bs-toggle="collapse" class="sidebar-link collapsed">
 							<i class="align-middle" data-feather="list"></i> <span class="align-middle">Purchasing</span>
 						</a>
-						<ul id="datatables1" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
+						<ul id="purchasing" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
 							<li class="sidebar-item"><a class="sidebar-link" href="">New Session <span
 										class="sidebar-badge badge bg-primary">Pro</span></a></li>
 						
@@ -98,10 +112,10 @@
 					
 	
 					<li class="sidebar-item">
-						<a data-bs-target="#datatables1" data-bs-toggle="collapse" class="sidebar-link collapsed">
+						<a data-bs-target="#ReorderShipments" data-bs-toggle="collapse" class="sidebar-link collapsed">
 							<i class="align-middle" data-feather="list"></i> <span class="align-middle">Reorder Shipments</span>
 						</a>
-						<ul id="datatables1" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
+						<ul id="ReorderShipments" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
 							<li class="sidebar-item"><a class="sidebar-link" href="">New Session <span
 										class="sidebar-badge badge bg-primary">Pro</span></a></li>
 						
@@ -112,10 +126,10 @@
 	
 	
 						<li class="sidebar-item">
-						<a data-bs-target="#datatables1" data-bs-toggle="collapse" class="sidebar-link collapsed">
+						<a data-bs-target="#ForeignShipments" data-bs-toggle="collapse" class="sidebar-link collapsed">
 							<i class="align-middle" data-feather="list"></i> <span class="align-middle">Foreign Shipments</span>
 						</a>
-						<ul id="datatables1" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
+						<ul id="ForeignShipments" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
 							<li class="sidebar-item"><a class="sidebar-link" href="">New Session <span
 										class="sidebar-badge badge bg-primary">Pro</span></a></li>
 						
@@ -134,10 +148,10 @@
 				
 				
 					<li class="sidebar-item">
-						<a data-bs-target="#datatables" data-bs-toggle="collapse" class="sidebar-link collapsed">
+						<a data-bs-target="#ProductExpiration" data-bs-toggle="collapse" class="sidebar-link collapsed">
 							<i class="align-middle" data-feather="list"></i> <span class="align-middle">Product Expiration</span>
 						</a>
-						<ul id="datatables" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
+						<ul id="ProductExpiration" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
 							<li class="sidebar-item"><a class="sidebar-link" href="">New Invoice <span
 										class="sidebar-badge badge bg-primary">Pro</span></a></li>
 						
@@ -147,10 +161,10 @@
 					
 					
 							<li class="sidebar-item">
-						<a data-bs-target="#datatables1" data-bs-toggle="collapse" class="sidebar-link collapsed">
+						<a data-bs-target="#Counter" data-bs-toggle="collapse" class="sidebar-link collapsed">
 							<i class="align-middle" data-feather="list"></i> <span class="align-middle">Counter</span>
 						</a>
-						<ul id="datatables1" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
+						<ul id="Counter" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
 							<li class="sidebar-item"><a class="sidebar-link" href="">New Session <span
 										class="sidebar-badge badge bg-primary">Pro</span></a></li>
 						
@@ -162,10 +176,10 @@
 			
 					
 					<li class="sidebar-item">
-						<a data-bs-target="#datatables" data-bs-toggle="collapse" class="sidebar-link collapsed">
+						<a data-bs-target="#PettyCash" data-bs-toggle="collapse" class="sidebar-link collapsed">
 							<i class="align-middle" data-feather="list"></i> <span class="align-middle">Petty Cash</span>
 						</a>
-						<ul id="datatables" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
+						<ul id="PettyCash" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
 							<li class="sidebar-item"><a class="sidebar-link" href="">New Invoice <span
 										class="sidebar-badge badge bg-primary">Pro</span></a></li>
 						
@@ -175,10 +189,10 @@
 
 					
 					<li class="sidebar-item">
-						<a data-bs-target="#datatables" data-bs-toggle="collapse" class="sidebar-link collapsed">
+						<a data-bs-target="#GasRegistry" data-bs-toggle="collapse" class="sidebar-link collapsed">
 							<i class="align-middle" data-feather="list"></i> <span class="align-middle">Gas Registry</span>
 						</a>
-						<ul id="datatables" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
+						<ul id="GasRegistry" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
 							<li class="sidebar-item"><a class="sidebar-link" href="">New Invoice <span
 										class="sidebar-badge badge bg-primary">Pro</span></a></li>
 						
@@ -187,15 +201,26 @@
 				
 
 
+
+					<li class="sidebar-item">
+						<a data-bs-target="#OdooList" data-bs-toggle="collapse" class="sidebar-link collapsed">
+							<i class="align-middle" data-feather="list"></i> <span class="align-middle">Odoo List</span>
+						</a>
+						<ul id="OdooList" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
+							<li class="sidebar-item"><a class="sidebar-link" href="">New Invoice <span
+										class="sidebar-badge badge bg-primary">Pro</span></a></li>
+						
+						</ul>
+					</li>
 					
 				
 				
 							
 					<li class="sidebar-item">
-						<a data-bs-target="#datatables" data-bs-toggle="collapse" class="sidebar-link collapsed">
+						<a data-bs-target="#users" data-bs-toggle="collapse" class="sidebar-link collapsed">
 							<i class="align-middle" data-feather="list"></i> <span class="align-middle">Users</span>
 						</a>
-						<ul id="datatables" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
+						<ul id="users" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
 							<li class="sidebar-item"><a class="sidebar-link" href="">New User</a></li>
 							<li class="sidebar-item"><a class="sidebar-link" href="">User List</a></li>
 						

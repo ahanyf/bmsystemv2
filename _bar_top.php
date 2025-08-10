@@ -3,9 +3,9 @@
 					<i class="hamburger align-self-center"></i>
 				</a>
 
-				<form class="d-none d-sm-inline-block">
+				<form class="d-none d-sm-inline-block" method="get" action="">
 					<div class="input-group input-group-navbar">
-						<input type="text" class="form-control" placeholder="Search…" aria-label="Search">
+						<input type="text" class="form-control" name="s" placeholder="Search…" aria-label="Search" required="">
 						<button class="btn" type="button">
 							<i class="align-middle" data-feather="search"></i>
 						</button>
@@ -63,7 +63,7 @@
 							Quick Access
 						</a>
 						<div class="dropdown-menu" aria-labelledby="resourcesDropdown">
-							<a class="dropdown-item" href="?app=delivary&page=new" target="_blank"><i class="align-middle me-1" data-feather="home"></i>
+							<a class="dropdown-item" href="?app=delivary&page=new" target=""><i class="align-middle me-1" data-feather="home"></i>
 								New Delivery</a>
 							<a class="dropdown-item" href="https://adminkit.io/docs/" target="_blank"><i class="align-middle me-1" data-feather="book-open"></i>
 								Todays Delivery</a>
@@ -71,6 +71,63 @@
 						</div>
 					</li>
 				</ul>
+
+
+
+
+					
+
+
+
+				<div class="navbar-collapse collapse">
+					<ul class="navbar-nav navbar-align">
+						<li class="nav-item dropdown">
+							<a class="nav-icon dropdown-toggle" href="#" id="alertsDropdown" data-bs-toggle="dropdown">
+								<div class="position-relative">
+									<i class="align-middle" data-feather="truck"></i>
+									<span class="indicator" >4</span>
+								</div>
+							</a>
+							<div class="dropdown-menu dropdown-menu-lg dropdown-menu-end py-0" aria-labelledby="alertsDropdown">
+								<div class="dropdown-menu-header">
+									4 Pending Delivery
+								</div>
+								<div class="list-group">
+									
+									
+									<a href="#" class="list-group-item">
+										<div class="row g-0 align-items-center">
+											<div class="col-2">
+												<i class="text-danger" data-feather="alert-circle"></i>
+											</div>
+											<div class="col-10">
+												<div class="text-dark">Update completed</div>
+												<div class="text-muted small mt-1">Restart server 12 to complete the update.</div>
+												<div class="text-muted small mt-1">30m ago</div>
+											</div>
+										</div>
+									</a>
+								
+								
+								
+								</div>
+								<div class="dropdown-menu-footer">
+									<a href="#" class="text-muted">Show Delivery</a>
+								</div>
+							</div>
+						</li>
+
+
+
+
+
+
+
+
+<!--
+
+
+
 
 				<div class="navbar-collapse collapse">
 					<ul class="navbar-nav navbar-align">
@@ -139,6 +196,21 @@
 								</div>
 							</div>
 						</li>
+						
+						
+						
+						
+						
+						
+						--->
+						
+						
+						
+						
+						
+					<!--	
+						
+						
 						<li class="nav-item dropdown">
 							<a class="nav-icon dropdown-toggle" href="#" id="messagesDropdown" data-bs-toggle="dropdown">
 								<div class="position-relative">
@@ -207,17 +279,22 @@
 							</div>
 						</li>
 						
-						<!--
+						<!---->
 						
 						<li class="nav-item dropdown">
 							<a class="nav-flag dropdown-toggle" href="#" id="languageDropdown" data-bs-toggle="dropdown">
-								<img src="_AdminKitPro/img/flags/us.png" alt="English" />
+								
+								<i class="text-primary" data-feather="home"></i>
+								
+								
 							</a>
 							<div class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
-								<a class="dropdown-item" href="#">
-									<img src="_AdminKitPro/img/flags/us.png" alt="English" width="20" class="align-middle me-1" />
-									<span class="align-middle">English</span>
+								<a class="dropdown-item" href="../v2/">
+									<i class="text-primary" data-feather="home"></i>
+									<span class="align-middle">Go to Home Page</span>
 								</a>
+								
+								<!--
 								<a class="dropdown-item" href="#">
 									<img src="_AdminKitPro/img/flags/es.png" alt="Spanish" width="20" class="align-middle me-1" />
 									<span class="align-middle">Spanish</span>
@@ -230,10 +307,13 @@
 									<img src="_AdminKitPro/img/flags/de.png" alt="German" width="20" class="align-middle me-1" />
 									<span class="align-middle">German</span>
 								</a>
+								
+								-->
+								
 							</div>
 						</li>
 						
-						-->
+						
 						
 						<li class="nav-item">
 							<a class="nav-icon js-fullscreen d-none d-lg-block" href="#">

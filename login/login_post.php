@@ -11,8 +11,50 @@ $cookieExpire = 10; // seconds
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Collect and sanitize inputs
     $bm_mobile = trim($_POST['bm_mobile'] );
-   echo  $bm_pass   = trim($_POST['bm_pass']   );
-    $now       = time();
+  	$bm_pass   = trim($_POST['bm_pass']   );
+    
+
+	require_once '../conn.php';
+
+
+// Prepare and execute query
+/*
+	
+echo $sql = "SELECT `userid`, `fullname`, `mobile`, `status`, `designation`, `workshite`, `notes`, `bm_password`, 
+`bm_usertype` FROM `bm_user` WHERE mobile = '$bm_mobile' AND bm_password = '$bm_pass'";
+
+*/
+
+echo $sql = "SELECT `userid`, `fullname`, `mobile`, `status`, `designation`, `workshite`, `notes`, `bm_password`, 
+`bm_usertype` FROM `bm_user` ";
+
+
+    $result = mysqli_query($conn, $sql);
+
+ $row = mysqli_fetch_assoc($result);
+
+
+echo $row["userid"];
+
+
+    if (mysqli_num_rows($result) > 0) {
+        $row = mysqli_fetch_assoc($result);
+
+        if ($row["userid"] > 0) {
+       //     $_SESSION['userid'] = $row["userid"];
+        //    $_SESSION['username'] = $row["username"];
+        //    $_SESSION['userphoto'] = $row["userphoto"];
+         //   $_SESSION['usersystem'] = $row["usersystem"];
+         //   session_write_close();
+
+         echo $row["userid"];
+
+		}
+
+		}
+
+
+
 
     // Determine message and cookie value
     if ($bm_pass === '123') {
@@ -22,7 +64,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 		
 		$_SESSION['bm_session_id'] = time();
 		
-		
+	   	
 		
 		
 		
@@ -51,7 +93,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 ////	header("location:/AdminKit-BM");
 	
 	///echo "<script>window.location.href='/AdminKit-BM';</script>";
-	header("Location: ../../v2/", true, 302);
+///	header("Location: ../../v2/", true, 302);
     exit;
 	
 	
