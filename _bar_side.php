@@ -224,7 +224,7 @@
 						</a>
 						<ul id="users" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
 							<li class="sidebar-item"><a class="sidebar-link" href="">New User</a></li>
-							<li class="sidebar-item"><a class="sidebar-link" href="">User List</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="?app=users&page=list">User List</a></li>
 						
 						</ul>
 					</li>
