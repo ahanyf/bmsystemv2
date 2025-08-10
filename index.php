@@ -3,7 +3,7 @@ session_start();
 
 
 
-if(isset($_SESSION['bm_session_id'])){
+if(isset($_SESSION['bmsession_id'])){
 	
 	include 'app/app.php';
 	

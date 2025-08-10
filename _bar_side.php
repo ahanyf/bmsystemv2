@@ -46,7 +46,9 @@
 				<ul class="sidebar-nav">
 					
 					<li class="sidebar-header">
-						
+						<small>
+						<?php echo strtoupper($_SESSION['username']); ?>
+						</small>
 					</li>	
 					
 					
