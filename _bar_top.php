@@ -331,7 +331,7 @@
 									$avator = 'userphoto/avatar.jpg';
 								}else{
 									
-									
+									$avator =  'userphoto/'.$_SESSION['userphoto'];
 								}
 								
 								

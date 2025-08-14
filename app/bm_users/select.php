@@ -7,12 +7,38 @@
 									<h5 class="card-title mb-0"></h5>
 								</div>
 								<div class="card-body text-center">
-									<img src="userphoto/avatar.jpg" alt="Christina Mason" class="img-fluid rounded-circle mb-2" width="128" height="128" />
+									
+									<?php
+									if(empty($photo[$id])){
+										echo '<img src="userphoto/avatar.jpg" alt="Christina Mason" class="img-fluid rounded-circle mb-2" width="128" height="128" />';
+									}else{
+										?>
+										<img src="userphoto/<?php echo $photo[$id]; ?>" alt="Christina Mason" class="img-fluid rounded-circle mb-2" width="128" height="128" />
+										<?php
+									}
+									
+									?>
+									
+									
+									
+									
 									<h5 class="card-title mb-0"><?php echo $fullname[$id]; ?></h5>
 									<div class="text-muted mb-2"><?php echo htmlspecialchars($mobile[$id]); ?></div>
 
+
+									
+			
 									<div>
-										<a class="btn btn-primary btn-sm" href="#">Edit</a>
+										
+										
+									<button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#m-edit-user">
+										Edit
+									</button>
+									<button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#m-photo-user">
+										Upload Photo
+									</button>
+										
+										
 										<a class="btn btn-primary btn-sm" href="#">Reset Password</a>
 										<a class="btn btn-primary btn-sm" href="#">Diactive</a>
 										
@@ -35,7 +61,26 @@
 								<hr class="my-0" />
 								<div class="card-body">
 									<h5 class="h6 card-title">User Access to:</h5>
-									<a href="#" class="badge bg-primary me-1 my-1">Add More</a>
+									<button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#m-user-access">
+										+
+									</button>
+									
+									<?php
+									 foreach ($permision_ as $key => $permision) {
+									 	?>
+										 <span class="badge bg-primary"><?php echo $permision; ?></span> 
+										 <?php
+									 }
+									
+									?>
+									
+									
+									<button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#m-user-remove">
+										-
+									</button>
+									
+									
+									
 									
 								</div>
 								

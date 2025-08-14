@@ -1,5 +1,7 @@
 <?php
 
+$uri = $_SERVER['REQUEST_URI'];
+
 if(isset($_GET['app'])){
 	$app = $_GET['app'];
 }

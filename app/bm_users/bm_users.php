@@ -2,6 +2,12 @@
 
 <?php
 
+/// dont chane any Value here---///
+$user_permission_[] = 'user_control';
+$user_permission_[] = 'user_control_two';
+
+$permision_[] = '';
+
 //echo $page;
 
 
@@ -17,6 +23,12 @@ switch ($page) {
 
 	case 'select':
 		include 'select.php';
+		
+		include 'model_edit_user.php';
+		include 'model_upload_photo.php';
+		include 'model_user_access.php';
+		include 'model_user_access_remove.php';
+		
 		break;
 
 	
