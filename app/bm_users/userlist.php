@@ -10,21 +10,33 @@
 									
 									
 									
-									<table class="table table-striped table-hover">
-<thead> <tr> <th>Name</th>  <th>Phone Number</th> <th>Date of Birth</th>
+<table class="table table-striped table-hover">
+<thead> <tr> <th>Name</th>  <th>Phone Number</th> 
         </tr>
       </thead>
-<tbody>'
+<tbody>
 <?php
 foreach ($userid_ as $id) {
     echo '<tr>';
     echo '<td>' . htmlspecialchars($fullname[$id]) . '</td>';
     echo '<td>' . htmlspecialchars($mobile[$id]) . '</td>';
-    echo '<td>' . htmlspecialchars($fullname[$id]) . '</td>'; // Use 'N/A' if DOB is missing
-    echo '</tr>';
+///    echo '<td>' . htmlspecialchars($fullname[$id]) . '</td>'; // Use 'N/A' if DOB is missing
+  
+	?>
+	
+	<td>
+		<a href="?app=users&page=select&id=<?php echo $id; ?>">Select</a>
+		
+	</td>
+	
+	</tr>
+	<?php
+	
 }
 
 ?>
+
+
 </tbody>
 </table>
 									

@@ -10,5 +10,13 @@ if(isset($_GET['page'])){
 }
 
 
+if(isset($_GET['id'])){
+	$id = $_GET['id'];
+}
+
+
+  
+
+
 
 ?>

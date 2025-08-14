@@ -1,13 +1,21 @@
 <?php
-session_start();
+
+$ERROR_location = "../../v2/";
+ //header("Location: ../../v2/", true, 302);
+
+require '../post_.php';
+require_once '../conn.php';
+
 
 // Configuration
 $cookieName   = 'password_incorrect';
-$cookieExpire = 10; // seconds
+$cookieExpire = 3; // seconds
 $now          = time(); // Current timestamp
 
 // Handle form submission
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+
+	
+	
     require_once '../conn.php';
 
     // Collect and sanitize inputs
@@ -19,7 +27,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 //$bm_pass = 123;
 
     // Prepare SQL query
-   echo  $sql = "SELECT `userid`, `fullname`, `mobile`, `status`, `designation`, `workshite`, `notes`, `bm_password`, `userphoto`, `bm_usertype` 
+     $sql = "SELECT `userid`, `fullname`, `mobile`, `status`, `designation`, `worksite`, `notes`, `bm_password`, `userphoto`, `bm_usertype` 
             FROM `bm_user` 
             WHERE `mobile` = '$bm_mobile' AND `bm_password` = '$bm_pass' AND `status` = 1";
 
@@ -34,7 +42,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             // Set session variables
              
             $_SESSION['bmsession_id']  = time();
-    echo    $_SESSION['userid']        = $row["userid"];
+            $_SESSION['userid']        = $row["userid"];
             $_SESSION['username']      = $row["fullname"];
             $_SESSION['userphoto']     = $row["userphoto"];
             $_SESSION['usermobile']    = $row["mobile"];
@@ -45,7 +53,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 		//		echo 'login ok';
             // Clear error cookie
-            setcookie($cookieName, '', $now + $cookieExpire, '/');
+            setcookie($cookieName, 'pass_correct', $now + $cookieExpire, '/');
 
            header("Location: ../../v2/", true, 302);
             exit;
@@ -58,9 +66,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     header("Location: ../../v2/", true, 302);
     exit;
-} else {
-    // Invalid request method
-    header("Location: ../../v2/", true, 302);
-    exit;
-}
+
+
 ?>

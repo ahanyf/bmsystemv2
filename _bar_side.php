@@ -70,7 +70,6 @@
 					
 					
 					
-					
 					<li class="sidebar-item">
 						<a data-bs-target="#delivary" data-bs-toggle="collapse" class="sidebar-link collapsed">
 							<i class="align-middle" data-feather="list"></i> <span class="align-middle">Delivary</span>
@@ -217,13 +216,16 @@
 					
 				
 				
+				
+				
+				
 							
-					<li class="sidebar-item">
-						<a data-bs-target="#users" data-bs-toggle="collapse" class="sidebar-link collapsed">
+					<li class="sidebar-item <?php if($app == 'users'){ echo 'active'; }  ?> ">
+						<a data-bs-target="#users" data-bs-toggle="collapse" class="sidebar-link ">   <!--collapsed -->
 							<i class="align-middle" data-feather="list"></i> <span class="align-middle">Users</span>
 						</a>
-						<ul id="users" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
-							<li class="sidebar-item"><a class="sidebar-link" href="">New User</a></li>
+						<ul id="users" class="sidebar-dropdown list-unstyled  <?php if($app != 'users'){ echo 'collapse'; }  ?> " data-bs-parent="#sidebar">
+							<li class="sidebar-item"><a class="sidebar-link" href="?app=users&page=new">New User</a></li>
 							<li class="sidebar-item"><a class="sidebar-link" href="?app=users&page=list">User List</a></li>
 						
 						</ul>
