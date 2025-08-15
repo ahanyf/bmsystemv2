@@ -28,6 +28,7 @@ switch ($page) {
 		include 'model_upload_photo.php';
 		include 'model_user_access.php';
 		include 'model_user_access_remove.php';
+		include 'model_user_reset_password.php';
 		
 		break;
 

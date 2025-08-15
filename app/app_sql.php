@@ -7,7 +7,7 @@ switch ($app) {
 		break;
 	
 	default:
-	include 'bm_home/bm_home.php';
+	include 'bm_home/bm_home_sql.php';
 		break;
 }
 

@@ -18,6 +18,19 @@ include '_AdminKitPro/_head.php';
 
 				<?php
 				
+				if (isset($_COOKIE['password'])) {
+					
+				
+				include 'app/bm_users/model_user_change_password.php';
+				
+				
+				
+				} 
+				
+				//else {
+				//    echo "Password cookie is not set.";
+			   //	}
+				
 				
 				if(isset($_GET['app'])){
 				include 'app_contact.php';

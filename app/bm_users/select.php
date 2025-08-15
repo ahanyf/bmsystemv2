@@ -37,9 +37,13 @@
 									<button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#m-photo-user">
 										Upload Photo
 									</button>
+
+
+									<button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#m-reset-password">
+										Reset Password
+									</button>
 										
 										
-										<a class="btn btn-primary btn-sm" href="#">Reset Password</a>
 										<a class="btn btn-primary btn-sm" href="#">Diactive</a>
 										
 									</div>

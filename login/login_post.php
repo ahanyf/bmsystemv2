@@ -32,6 +32,11 @@ $now          = time(); // Current timestamp
             WHERE `mobile` = '$bm_mobile' AND `bm_password` = '$bm_pass' AND `status` = 1";
 
     $result = mysqli_query($conn, $sql);
+	
+	
+	
+	
+	
 
     if ($result && mysqli_num_rows($result) > 0) {
     	
@@ -48,8 +53,33 @@ $now          = time(); // Current timestamp
             $_SESSION['usermobile']    = $row["mobile"];
             $_SESSION['usertype']      = $row["bm_usertype"];
             $_SESSION['userworkshite'] = $row["workshite"];
+			
+			
+			$userid = $row["userid"];
+			
+		//	$_SESSION['permission'] = [];
+			
+			$sql_permission = "SELECT `permision` FROM `bm_user_access` WHERE userid = $userid";
+			
+			$result_p = mysqli_query($conn, $sql_permission );
+			
+			while ($row_p = mysqli_fetch_assoc($result_p)) {
+    	
+   				$_SESSION['permission'][] = $row_p['permision'];
+			}
+			
 
             session_write_close();
+			
+			
+				if ($bm_mobile === $bm_pass) {
+					    // Set cookie for 1 hour
+					    setcookie('password', 'need_to_change', time() + 3600, '/');
+					} else {
+					    // Clear cookie by setting expiration in the past
+					    setcookie('password', '', time() - 3600, '/');
+					}
+			
 
 		//		echo 'login ok';
             // Clear error cookie

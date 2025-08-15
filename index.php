@@ -14,6 +14,10 @@ if (isset($_SESSION['bmsession_id'])) {
     include 'login/login.php';
 }
 
+
+/// print_r($_SESSION['permission']);
+
+
 // Initialize notification variables
 $cookieValue  = '';
 $noti_type    = '';
