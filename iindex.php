@@ -1,11 +1,8 @@
 
-sdada
-asdasdasdas
+
 <?php
 
 
-
-/*
 
 session_start();
 
