@@ -1,4 +1,12 @@
+
+sdada
+asdasdasdas
 <?php
+
+
+
+/*
+
 session_start();
 
 if (isset($_SESSION['bmsession_id'])) {
