@@ -21,11 +21,33 @@ switch ($app) {
 	
 //////////////////////////////////////////////////////////////////////////////////////////////////////	
 	
+case 'delivary':
+	include 'bm_delivary/bm_delivary.php';
+	break;	
+	
+	
+case 'gas':
+	include 'bm_gas/bm_gas.php';
+	break;		
+
+
+case 'location':
+	include 'bm_location/bm_location.php';
+	break;	
+
+
+case 'contacts':
+	include 'bm_contacts/bm_contacts.php';
+	break;	
+
 	
 	default:
 		include 'bm_home/bm_home.php';
 		break;
 }
+
+
+//// no useinclude 'bm_delivary/model_new_delivery.php';
 
 
 ?>

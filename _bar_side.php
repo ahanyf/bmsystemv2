@@ -75,7 +75,7 @@
 							<i class="align-middle" data-feather="list"></i> <span class="align-middle">Delivary</span>
 						</a>
 						<ul id="delivary" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
-							<li class="sidebar-item"><a class="sidebar-link" href="">New Invoice <span
+							<li class="sidebar-item"><a class="sidebar-link" href="?app=delivary&page=new">New Delivary <span
 										class="sidebar-badge badge bg-primary">Pro</span></a></li>
 						
 						</ul>
@@ -161,7 +161,7 @@
 					
 					
 					
-							<li class="sidebar-item">
+					<li class="sidebar-item">
 						<a data-bs-target="#Counter" data-bs-toggle="collapse" class="sidebar-link collapsed">
 							<i class="align-middle" data-feather="list"></i> <span class="align-middle">Counter</span>
 						</a>
@@ -188,18 +188,36 @@
 					</li>
 				
 
+
 					
-					<li class="sidebar-item">
+					<li class="sidebar-item  <?php if($app == 'gas'){ echo 'active'; }  ?>   ">
 						<a data-bs-target="#GasRegistry" data-bs-toggle="collapse" class="sidebar-link collapsed">
 							<i class="align-middle" data-feather="list"></i> <span class="align-middle">Gas Registry</span>
 						</a>
-						<ul id="GasRegistry" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
-							<li class="sidebar-item"><a class="sidebar-link" href="">New Invoice <span
-										class="sidebar-badge badge bg-primary">Pro</span></a></li>
+						<ul id="GasRegistry" class="sidebar-dropdown list-unstyled <?php if($app != 'gas'){ echo 'collapse'; }  ?> " data-bs-parent="#sidebar">
+							<li class="sidebar-item"><a class="sidebar-link" href="?app=gas&page=new">New Gas</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="?app=gas&page=list">Registry</a></li>
 						
 						</ul>
 					</li>
 				
+
+
+			
+				<li class="sidebar-item ">
+						<a class="sidebar-link" href="?app=location&page=list">
+							<i class="align-middle" data-feather="list"></i> <span class="align-middle">Location</span>
+						</a>
+					</li>
+								
+
+				<li class="sidebar-item ">
+						<a class="sidebar-link" href="?app=contacts&page=list">
+							<i class="align-middle" data-feather="list"></i> <span class="align-middle">Contacts</span>
+						</a>
+					</li>
+
+
 
 
 

@@ -26,5 +26,6 @@ register_shutdown_function(function () use ($ERROR_location) {
 });
 
 
+$bm_userid = $_SESSION['userid'];
 
 /////////////////////////////////////////////////////////////////////

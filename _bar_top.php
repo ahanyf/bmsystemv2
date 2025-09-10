@@ -67,7 +67,10 @@
 								New Delivery</a>
 							<a class="dropdown-item" href="https://adminkit.io/docs/" target="_blank"><i class="align-middle me-1" data-feather="book-open"></i>
 								Todays Delivery</a>
-							
+							<a class="dropdown-item" href="https://adminkit.io/docs/" target="_blank"><i class="align-middle me-1" data-feather="book-open"></i>
+								Apply for Discount</a>	
+								
+								
 						</div>
 					</li>
 				</ul>

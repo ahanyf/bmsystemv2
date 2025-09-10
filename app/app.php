@@ -58,7 +58,20 @@ include '_AdminKitPro/_head.php';
 	
 	
 	</div>
+	
+	
+	
 	<script src="_AdminKitPro/js/app.js"></script>
+	
+	<script src="_AdminKitPro/js/datatables.js"></script>
+		<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			// Datatables Responsive
+			$("#datatables-reponsive").DataTable({
+				responsive: true
+			});
+		});
+	</script>
 
 </body>
 </html>

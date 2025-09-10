@@ -1,47 +1,51 @@
 <?php
 
 
-echo '<h1 class="h3 mb-3">Delivery</h1>';
-
 switch ($page) {
-
+	
+	case 'list':
+		echo '<h1 class="h3 mb-3">Gas Registry</h1>';
+		include 'new_regist_alart.php';	
+		include 'gaslist.php';
+		break;
 
 	case 'new':
-
-	include 'delivary_new_form.php';
-		
+	echo '<h1 class="h3 mb-3">New Gas Registration</h1>';
+	echo '<div class="row">';
+		include 'new_regist_alart.php';		
+		include 'new_form.php';
+		include 'new_recent_registration.php';
+	echo '</div>';	
+	
 	include 'app/bm_contacts/model_form_new_contact.php';
 	include 'app/bm_location/model_form_new_location.php';
-
-		break;
-
-
-	case 'id':
-		
-		include 'delivary_id.php';
-		
-		
-		include 'app/bm_contacts/model_form_new_contact.php';
-		include 'app/bm_location/model_form_new_location.php';
-		
-		
-		include 'delivary_id_items_form1_model_edit.php';
-		include 'delivary_id_items_form1_model_delete.php';
-		include 'model_change_location.php';
-		
-		include 'model_send_delivery.php';
-		include 'model_change_date.php';
-		
-		
-		break;
-
 	
+		break;
+
+
+	case 'check':
+	echo '<h1 class="h3 mb-3">Confirm New Registration</h1>';
+	echo '<div class="row">';		
+		include 'check_form_confirm.php';
+		
+	echo '</div>';	
+			include 'check_model_form_delete.php';
+			include 'check_model_form_cylinder.php';
+			include 'check_model_form_confirm.php';
+			include 'check_model_form_delete_cylinder.php';
+		break;	
+
+	case 'registryid':	
+		echo '<h1 class="h3 mb-3">Registration id</h1>';
+	
+	
+		break;
+		
 	default:
 		
 		break;
+		
 }
-
-
 
 
 
