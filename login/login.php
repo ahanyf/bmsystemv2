@@ -50,7 +50,7 @@
 
 						<div class="text-center mt-4">
 							
-							<h1 class="h2">Welcome back!</h1>
+							<h1 class="h2">Welcome back! BEACH MART</h1>
 							<p class="lead">
 								Sign in to your account to continue
 							</p>
