@@ -11,14 +11,9 @@ $dbname = "bmsystem_v2";
 
 /*
 $servername = "localhost";
-$username = "dhiamazo_dhiamazo"; 	
-
-$password = "yA@_122110#abd";
-
-//$dbname = "dhiamazo_testdb1";
-
-$dbname = "dhiamazo_bmsys_v1";
-
+$username = "bmsysliv_root"; 	
+$password = "GO2B4@mb[Go}";
+$dbname = "bmsysliv_bmsystem_v2";
 
 */
 

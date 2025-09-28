@@ -50,6 +50,8 @@ switch ($page) {
 ?>
 
 
+
+
 	<script>
 		document.addEventListener("DOMContentLoaded", function() {
 			// Choices.js
@@ -64,6 +66,7 @@ switch ($page) {
 				enableTime: true,
 				dateFormat: "Y-m-d H:i",
 			});
+			
 			flatpickr(".flatpickr-human", {
 				altInput: true,
 				altFormat: "F j, Y",

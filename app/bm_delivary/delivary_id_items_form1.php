@@ -1,4 +1,4 @@
-
+<!--
 
 <div class="container">
 	
@@ -18,7 +18,8 @@
     <div class="col-md-8">
       <label class="visually-hidden" for="inlineFormInputItem">Item Name</label>
       <div class="input-group">
-        <input type="text" name="item_name" class="form-control" id="inlineFormInputItem" placeholder="Item Name (BM Code)">
+        <input type="text" name="item_name"    autocomplete="off"      class="form-control"  placeholder="Item Name (BM Code)">
+         
       </div>
     </div>
 
@@ -29,4 +30,8 @@
   </form>
 </div>
 
+-->
 
+<?php
+include 'index.php';
+?>

@@ -14,7 +14,7 @@ if (isset($_SESSION['bmsession_id'])) {
         include 'app/app_sql.php';
     }
 
-    include 'app/app.php';
+   include 'app/app.php';
 } else {
     include 'login/login.php';
 }

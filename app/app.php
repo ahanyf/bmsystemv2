@@ -1,7 +1,18 @@
 <?php
 include '_AdminKitPro/_head.php';
 ?>
-<body data-theme="default" data-layout="fluid" data-sidebar-position="left" data-sidebar-layout="default">
+
+<!--
+  HOW TO USE: 
+  data-theme: default (default), dark, light, colored
+  data-layout: fluid (default), boxed
+  data-sidebar-position: left (default), right
+  data-sidebar-layout: default (default), compact
+-->
+
+
+	
+<body data-theme="default" data-layout="fluid" data-sidebar-position="left" data-sidebar-layout="default"> 
 	<div class="wrapper">
 		<?php
 		include '_bar_side.php';
@@ -60,10 +71,15 @@ include '_AdminKitPro/_head.php';
 	</div>
 	
 	
-	
+
 	<script src="_AdminKitPro/js/app.js"></script>
-	
+
+
+
 	<script src="_AdminKitPro/js/datatables.js"></script>
+	
+	
+	
 		<script>
 		document.addEventListener("DOMContentLoaded", function() {
 			// Datatables Responsive
