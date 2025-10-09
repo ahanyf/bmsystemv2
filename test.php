@@ -48,4 +48,21 @@ if ($result && mysqli_num_rows($result) > 0) {
 
 
 
+?>
+
+<form action="test_post.php" method="POST">
+    <div class="mb-3">
+      <label for="user_id" class="form-label">User ID</label>
+      <input type="text" class="form-control" id="user_id" name="user_id" required>
+    </div>
+    <div class="mb-3">
+      <label for="new_username" class="form-label">New Username</label>
+      <input type="text" class="form-control" id="new_username" name="new_username" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Update Username</button>
+  </form>
+
+
+
+
 
