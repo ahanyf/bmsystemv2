@@ -7,11 +7,20 @@ $dbname = "bmsystem_v2";
 
 /*
 $servername = "localhost";
-$username = "dhiamazo_dhiamazo"; 	
-$password = "yA@_122110#abd";
-//$dbname = "dhiamazo_testdb1";
-$dbname = "dhiamazo_bmsys_v1";
+$username = "root";
+$password = "";
+$dbname = "bmsystem_v2";
+
+$servername = "localhost";
+$username = "ivjmxzmy_122110"; 	
+
+$password = "wQ_*wNt.a3E{g@9";
+
+
+$dbname = "ivjmxzmy_bmsystem_v2";
+ 
 */
+
 // Create connection
 $conn = mysqli_connect($servername, $username, $password, $dbname);
 // Check connection
