@@ -57,7 +57,6 @@
 						</div>
 
 						<div class="card">
-ddddddddddddddddddddddddd
 							<div class="card-body">
 								<div class="m-sm-3">
 									

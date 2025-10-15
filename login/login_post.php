@@ -1,6 +1,5 @@
 <?php
-session_start();
-
+require_once '../session_.php';
 require_once '../conn.php';
 
 // Configuration
