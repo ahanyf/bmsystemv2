@@ -1,4 +1,5 @@
 <?php
+require_once '../../session_.php';require_once '../../session_.php';
 
 $ERROR_location = "../../../v2/?app=users&page=new";
 

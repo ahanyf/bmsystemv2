@@ -1,5 +1,5 @@
 <?php
-
+require_once '../../session_.php';
 $uri = $_POST['uri'];
 
 //$ERROR_location = "../../../v2/?app=users&page=select&id=".$userid;
