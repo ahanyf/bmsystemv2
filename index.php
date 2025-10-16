@@ -1,10 +1,6 @@
-
-
 <?php
+include 'session_.php';
 
-
-
-session_start();
 
 if (isset($_SESSION['bmsession_id'])) {
     include 'get_.php';
@@ -15,8 +11,37 @@ if (isset($_SESSION['bmsession_id'])) {
     }
 
    include 'app/app.php';
+   
 } else {
-    include 'login/login.php';
+	
+	
+	
+	if(isset($_GET['page'])){
+		include 'login/login.php';
+	}else{
+		
+		if (isset($_COOKIE["name"])) {
+		
+		include 'login/lock.php';
+			
+		}else{
+			
+			include 'login/login.php';
+			
+		}
+		
+		
+		
+		
+	}
+	
+	
+	
+
+	
+    
+	
+	
 }
 
 

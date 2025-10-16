@@ -7,6 +7,9 @@ $ERROR_location = "../../v2/";
 $cookieName     = 'password_incorrect';
 $cookieExpire   = 3; // seconds
 $now            = time(); // Current timestamp
+$cook_pass= 'pass';
+$cook_user = 'user';
+$cook_name = 'name';
 
 // Collect and sanitize inputs
 $bm_mobile = mysqli_real_escape_string($conn, trim($_POST['bm_mobile']));
@@ -54,6 +57,14 @@ if ($result && mysqli_num_rows($result) > 0) {
 
         // Clear error cookie
         setcookie($cookieName, 'pass_correct', $now + $cookieExpire, '/');
+		
+		setcookie($cook_user, $bm_mobile, $now + 324000, '/');
+		
+		setcookie($cook_pass, $bm_pass, $now + 324000, '/');
+		
+		setcookie($cook_name, $row["fullname"] , $now + 324000, '/');
+		
+
 
         header("Location: $ERROR_location", true, 302);
         exit;
