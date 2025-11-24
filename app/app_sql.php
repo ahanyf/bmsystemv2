@@ -15,22 +15,42 @@ if(isset($app)){
 
 
 
-/*
 
-switch ($app) {
-	case 'users':
-		//include 'bm_users/bm_users_sql.php';
-		
-		include 'bm_'.$app.'/'.'bm_'.$app.'_sql.php';
-		
-		break;
+
+///print_r($userids_);//
+
+$bm_userid = $_SESSION['userid'];
+
+$userids = [$bm_userid]; // Initialize array directly
+
+$userids_unique = array_unique($userids); // Remove duplicates
+
+$id_list = implode(', ', $userids_unique); // Convert to comma-separated string
+
+$sql_user = "SELECT * FROM `bm_user` WHERE `userid` IN ($id_list)";
+
+$result = mysqli_query($conn, $sql_user);
+
+$bm_user_[] = "";
+
+while ($row = mysqli_fetch_assoc($result)) {
 	
-	default:
-	include 'bm_home/bm_home_sql.php';
-		break;
+    $userid = $row['userid'];
+	
+    $bm_user_[$userid] = [
+        'fullname'    => $row['fullname'],
+		'mobile'    => $row['mobile'],
+		'status'    => $row['status'],
+		'worksite'    => $row['worksite'],
+		'userphoto'    => $row['userphoto']
+	  ];  
 }
+		
 
-*/
+//print_r($bm_user_);
+
+///////////////////////////////////////////////
+
 
 
 

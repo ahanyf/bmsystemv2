@@ -20,6 +20,16 @@ switch ($app) {
         break;
 	
 //////////////////////////////////////////////////////////////////////////////////////////////////////	
+
+case 'pettycash':
+	include 'bm_pettycash/bm_pettycash.php';
+	break;	
+
+
+case 'program';
+include 'bm_program/bm_program.php';
+break;
+
 	
 case 'delivary':
 	include 'bm_delivary/bm_delivary.php';

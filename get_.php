@@ -17,7 +17,11 @@ if(isset($_GET['id'])){
 }
 
 
-  
+ if(isset($_GET['year'])){
+	$year = $_GET['year'];
+}else{
+	$year = date("Y");
+}
 
 
 

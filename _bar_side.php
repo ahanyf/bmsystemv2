@@ -87,7 +87,8 @@
 							<i class="align-middle" data-feather="list"></i> <span class="align-middle">Reordering</span>
 						</a>
 						<ul id="reordering" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
-							<li class="sidebar-item"><a class="sidebar-link" href="">New Invoice <span
+							
+							<li class="sidebar-item"><a class="sidebar-link" href="?app=pettycash&page=newinvoice">New Invoice <span
 										class="sidebar-badge badge bg-primary">Pro</span></a></li>
 						
 						</ul>
@@ -176,14 +177,14 @@
 									
 			
 					
-					<li class="sidebar-item">
+					<li class="sidebar-item  <?php if($app == 'pettycash'){ echo 'active'; }  ?>  ">
 						<a data-bs-target="#PettyCash" data-bs-toggle="collapse" class="sidebar-link collapsed">
 							<i class="align-middle" data-feather="list"></i> <span class="align-middle">Petty Cash</span>
 						</a>
-						<ul id="PettyCash" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
-							<li class="sidebar-item"><a class="sidebar-link" href="">New Invoice <span
-										class="sidebar-badge badge bg-primary">Pro</span></a></li>
-						
+						<ul id="PettyCash" class="sidebar-dropdown list-unstyled  <?php if($app != 'pettycash'){ echo 'collapse'; }  ?>  " data-bs-parent="#sidebar">
+						<?php
+						include 'app/bm_pettycash/manu.php';
+						?>
 						</ul>
 					</li>
 				
@@ -194,7 +195,9 @@
 						<a data-bs-target="#GasRegistry" data-bs-toggle="collapse" class="sidebar-link collapsed">
 							<i class="align-middle" data-feather="list"></i> <span class="align-middle">Gas Registry</span>
 						</a>
+						
 						<ul id="GasRegistry" class="sidebar-dropdown list-unstyled <?php if($app != 'gas'){ echo 'collapse'; }  ?> " data-bs-parent="#sidebar">
+							
 							<li class="sidebar-item"><a class="sidebar-link" href="?app=gas&page=new">New Gas</a></li>
 							<li class="sidebar-item"><a class="sidebar-link" href="?app=gas&page=list">Registry</a></li>
 						
