@@ -9,12 +9,12 @@ $page = $_GET['page'];
 
 include 'bm_pettycash_sql.php';
 
-
+/*
 if (empty($pr_invoice_id)) {
     echo 'No Preview';
     exit;
 }
-
+*/
 
 ?>
 

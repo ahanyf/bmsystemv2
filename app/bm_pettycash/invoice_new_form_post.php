@@ -39,9 +39,9 @@ function sanitize($data) {
 
     // Prepare SQL
     $sql = "INSERT INTO bm_vinvoice (
-                vi_vendor_id, vi_year, vi_date, vi_ref, vi_gst, vi_total, vi_details, vi_entry_by, created_at
+                vi_vendor_id, vi_year, vi_date, vi_ref, vi_gst, vi_total, vi_details, vi_entry_by
             ) VALUES (
-                $vi_vendor_id, $vi_year, '$vi_date', '$vi_ref', $vi_gst, $vi_total, '$vi_details', $bm_userid, NOW()
+                $vi_vendor_id, $vi_year, '$vi_date', '$vi_ref', $vi_gst, $vi_total, '$vi_details', $bm_userid
             )";
 
 

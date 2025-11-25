@@ -10,6 +10,7 @@
         	<table id="datatables-reponsive" class="table table-striped" style="width:100%">
           <thead>
             <tr>
+            	<td></td>
               <th>Invoice #</th>
               <th>Vendor</th>
               <th>Ref / Date</th>
@@ -37,17 +38,25 @@
 				<?php 
 				if (empty($vinvoice_data['vi_no'])) : ?>
 				    <a href="?app=pettycash&page=invoiceid&id=<?= htmlspecialchars($vid) ?>" class="btn btn-warning">
-				        Select
+				        <i class="fa fa-select"></i>
 				    </a>
 				<?php else : ?>
 				    <a href="?app=pettycash&page=invoiceid&id=<?= htmlspecialchars($vid) ?>" class="btn btn-outline-secondary">
-				        <?= htmlspecialchars($vinvoice_[$vid]['vi_year']) ?>/<?= htmlspecialchars($vinvoice_data['vi_no']) ?>
+				       <i class="fa fa-select"></i>
 				    </a>
 				<?php endif; ?>
 				                	
                 	
                                	
                 </td>
+                
+                
+                <td>
+                	 <?= htmlspecialchars($vinvoice_[$vid]['vi_year']) ?>/<?= htmlspecialchars($vinvoice_data['vi_no']) ?>
+                </td>
+                
+                
+                
                 <td>
                 	<?php 
                 	

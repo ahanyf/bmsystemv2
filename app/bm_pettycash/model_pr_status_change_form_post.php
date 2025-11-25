@@ -1,4 +1,3 @@
-
 <?php
 require_once '../../session_.php';
 
@@ -49,7 +48,7 @@ $paid_date  = isset($_POST['paid_date']) ? trim($_POST['paid_date']) : '';
 if($status == "Paid"){
 	
 	
-$sql = "UPDATE `bm_prequest` 
+ $sql = "UPDATE `bm_prequest` 
 			SET 
 			 
 			  `pr_status`= '$status',

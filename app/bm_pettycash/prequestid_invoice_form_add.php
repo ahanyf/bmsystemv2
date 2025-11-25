@@ -26,9 +26,18 @@
   <?php foreach ($pending_invoice_ as $vid => $inv): ?>
     <option value="<?php echo htmlspecialchars($inv); ?>">
       <?php 
-        echo  htmlspecialchars( $vendor_[ $vinvoice_[$inv]['vi_vendor_id']]['vendor_name'] ) ;
-          echo    ' | ' . htmlspecialchars($vinvoice_[$inv]['vi_no']);
+       
+		
+          echo     htmlspecialchars($vinvoice_[$inv]['vi_year']);
+		  
+		  echo '/' .htmlspecialchars($vinvoice_[$inv]['vi_no']);
+		  
+		  echo '- ';
+		  
+		   echo  htmlspecialchars( $vendor_[ $vinvoice_[$inv]['vi_vendor_id']]['vendor_name'] ) ;
              
+			
+			
 			 if (!empty($po_invoice_[$inv]['po_number'])) {
    			 echo ' | <strong>' . $po_invoice_[$inv]['po_number'].'</strong>';
 				}
